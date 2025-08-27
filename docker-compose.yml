@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  app:
+    build: .
+    container_name: spring-proxy
+    ports:
+      - "8080:8080"
+    environment:
+      - EXTERNAL_API_BASEURL=${EXTERNAL_API_BASEURL}
