@@ -6,7 +6,7 @@ Documentación para la ejecución y gestion de la aplicación.
 
 1. Configurar las variables de entorno en un archivo .env
 ```
-EXTERNAL_API_BASEURL=VALORURLAPI
+EXTERNAL_API_BASEURL=https://jsonplaceholder.typicode.com
 ```
 2. Sincronizar la dependencias del proyecto con maven:
 ```
@@ -23,7 +23,7 @@ docker build -t spring-proxy:latest .
 ```
 2. Ejecutar el contenedor seteando las variables de entorno:
 ```
-docker run --rm -e EXTERNAL_API_BASEURL="VALORURLAPI" -p 8080:8080 spring-proxy:latest 
+docker run --rm -e EXTERNAL_API_BASEURL="https://jsonplaceholder.typicode.com" -p 8080:8080 spring-proxy:latest 
 ```
 
 ### Ejecución del entorno local CON DOCKER y el DOCKER-COMPOSE
